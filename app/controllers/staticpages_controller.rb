@@ -23,4 +23,8 @@ class StaticpagesController < ApplicationController
 
   def contact
   end
+
+  def appointments
+  end
+  
 end
