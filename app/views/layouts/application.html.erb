@@ -37,8 +37,17 @@
     <![endif]-->
   </head>
   <body>
+  <div class="container">
+  <% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %>">
+      <%= value %>
+    </div>
+  <% end %>
+</div>
+  <div class="container">
   <%= render 'layouts/navigation' %>
   <%= yield %>
   <%= render 'layouts/footer' %>
+  </div>
   </body>
   </html>
